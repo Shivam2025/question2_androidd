@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".andapp1">
+<TableLayout
+    android:layout_width="40dp"
+    android:background="#FF0000"
+    android:layout_height="30dp">
+
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <Button
+            android:id="@+id/ghost_view"
+            android:layout_width="20pt"
+            android:layout_height="10pt"
+            android:text="r"
+            android:layout_weight="1"
+            android:background="@color/black"
+
+            ></Button>
+   </TableRow>
+</TableLayout>
+
+</RelativeLayout>

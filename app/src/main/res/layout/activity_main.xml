@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF00"
+    android:orientation="horizontal"
+    android:largeScreens="true"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        app:cardBackgroundColor="#FFFF00"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="216dp"
+            android:layout_height="151dp"
+            android:layout_marginLeft="13mm"
+            android:layout_marginTop="4.1mm"
+            android:src="@drawable/ima"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="192dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="28mm"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/button_states"
+            android:paddingLeft="60dp"
+            android:text="SignUp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="@android:color/white" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="192dp"
+            android:layout_height="43dp"
+            android:layout_alignEnd="@+id/button"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/button_states"
+            android:text="Login"
+            app:backgroundTint="@color/design_default_color_primary_dark" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image3"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="276dp"
+            android:src="@drawable/tw"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image4"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="276dp"
+            android:src="@drawable/fa1"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image5"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="276dp"
+            android:src="@drawable/goo"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="28mm"
+            android:layout_marginTop="331dp"
+            android:height="10mm"
+            android:text="or"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/nameTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15mm"
+            android:layout_marginTop="365dp"
+            android:text="User name/Email address"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/nameEditText1"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/passwordEditText"
+            android:layout_alignEnd="@id/passwordEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="389.9dp"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+
+            android:id="@+id/passwordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22mm"
+            android:layout_marginTop="450dp"
+            android:text="Password"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="462dp"
+            android:gravity="center_horizontal"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3mm"
+            android:layout_marginTop="519dp"
+            android:text="Remember me"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_click_me"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordEditText"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="575dp"
+            android:layout_marginRight="10dp"
+            android:width="1in"
+            android:background="@drawable/button_states"
+            android:bottomLeftRadius="20dp"
+            android:bottomRightRadius="20dp"
+            android:text=" Done"
+            android:textColor="@color/white"
+            android:topLeftRadius="20dp"
+            android:topRightRadius="20dp"
+            app:backgroundTint="@color/design_default_color_primary_dark" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="275dp"
+            android:layout_marginTop="590dp"
+            android:elevation="2dp"
+            android:src="@drawable/gr1"></ImageView>
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="18mm"
+            android:layout_marginTop="632dp"
+            android:layout_marginBottom="10dp"
+            android:text="Forget Password?"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
